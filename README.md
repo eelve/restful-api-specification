@@ -583,7 +583,7 @@ Cache-Control: no-cache, private
 Date: Sun, 24 Jun 2018 13:17:02 GMT
 Connection: keep-alive
 
-"message":"Token Signature could not be verified.","error_code": "40100"}
+{"message":"Token Signature could not be verified.","error_code": "40100"}
 ```
 
 ### 403 Forbidden
@@ -611,7 +611,7 @@ Connection: keep-alive
 * 获取不存在的用户信息 （get /users/9999999）
 * 访问不存在的端点
 
-都 `必须` 返回该状态码，若该资源已永久不存在，则 `应该` 返回 `401` 响应。
+都 `必须` 返回该状态码，若该资源已永久不存在，则 `应该` 返回 `410` 响应。
 
 ### 405 Method Not Allowed
 
